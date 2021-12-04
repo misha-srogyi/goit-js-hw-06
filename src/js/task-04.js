@@ -1,8 +1,21 @@
 
-    // <div id="counter">
-    //   <button type="button" data-action="decrement">-1</button>
-    //   <span id="value">0</span>
-    //   <button type="button" data-action="increment">+1</button>
-    // </div>
+const refs = {
+    decrement: document.querySelector('[data-action="decrement"]'),
+    increment: document.querySelector('[data-action="increment"]'),
+    text: document.querySelector('#value'),
+};
 
-const counterValue = 0;
+let counterValue = 0;
+    
+refs.decrement.addEventListener('click', onButtonDecrement);
+refs.increment.addEventListener('click', onButtonIncrement);
+
+function onButtonDecrement() {
+    counterValue -= 1;
+    refs.text.textContent = counterValue;
+};
+
+function onButtonIncrement() {
+    counterValue += 1;
+    refs.text.textContent = counterValue;
+};
