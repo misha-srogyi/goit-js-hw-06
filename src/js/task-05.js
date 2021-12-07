@@ -9,9 +9,10 @@ refs.input.addEventListener('input', onInputChange);
 function onInputChange(event) { 
     if (refs.input.value !== '') {
         refs.span.textContent = event.currentTarget.value;
-    } else {
+    } 
+    else {
         refs.span.textContent = 'Anonymous';
-    };
+    }
     
 };
 

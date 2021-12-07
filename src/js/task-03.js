@@ -13,6 +13,8 @@ const images = [
   },
 ];
 
+const galleryRef = document.querySelector('.gallery');
+
 const makeGalleryElementMarkup = element => {
   return `
   <li class = 'gallery-item'>
@@ -20,7 +22,6 @@ const makeGalleryElementMarkup = element => {
   </li>`;
 };
 
-const galleryRef = document.querySelector('.gallery');
 const makeGalleryElements = images.map(makeGalleryElementMarkup).join('');
 galleryRef.insertAdjacentHTML("afterbegin", makeGalleryElements);
 console.log(makeGalleryElements);
