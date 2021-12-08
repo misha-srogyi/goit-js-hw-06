@@ -1,4 +1,3 @@
-
 const refs = {
     inputRange: document.querySelector('#font-size-control'),
     textSize: document.querySelector('#text'),

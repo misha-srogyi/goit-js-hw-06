@@ -1,4 +1,3 @@
-
 const refs = {
     input: document.querySelector('#name-input'),
     span: document.querySelector('#name-output'),
@@ -13,6 +12,5 @@ function onInputChange(event) {
     else {
         refs.span.textContent = 'Anonymous';
     }
-    
 };
 

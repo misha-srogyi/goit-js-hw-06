@@ -1,4 +1,3 @@
-
 const getFocusInput = document.querySelector('#validation-input');
 
 getFocusInput.addEventListener('blur', onInputFocus);

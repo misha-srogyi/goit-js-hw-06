@@ -23,5 +23,7 @@ const makeGalleryElementMarkup = element => {
 };
 
 const makeGalleryElements = images.map(makeGalleryElementMarkup).join('');
+
 galleryRef.insertAdjacentHTML("afterbegin", makeGalleryElements);
+
 console.log(makeGalleryElements);
