@@ -13,10 +13,9 @@ function onFormSubmit(event) {
     if (!mail || !password) {
         return alert('All input fields must be filled')
     }
-    else {
         const formData = { mail, password };
         console.log(formData);
-    };
+    
     // if (mail !== '' && password !== '') {
     //     const formData = { mail, password };
     //     console.log(formData);
