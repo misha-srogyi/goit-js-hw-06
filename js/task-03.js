@@ -18,7 +18,7 @@ const galleryRef = document.querySelector('.gallery');
 const makeGalleryElementMarkup = element => {
   return `
   <li class = 'gallery-item'>
-    <img class ='item_image' src = '${element.url}' width="350" height="250" alt:'${element.alt}'/>
+    <img class ='item_image' src = '${element.url}' width="350" height="250" alt= '${element.alt}'/>
   </li>`;
 };
 
